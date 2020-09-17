@@ -31,22 +31,22 @@ getGreeting();
 
 
 function getProduct() {
-var response = prompt('Would you rather see Lemon eating, playing or sleeping?');
+var response = prompt('Would you rather see Lemon eat, play or sleep?');
 var item; 
     
-while(response != 'eating' && response != 'playing' && response != 'sleeping') {
-    item = prompt("BE SPECIFIC!");
+while(response != 'eat' && response != 'play' && response != 'sleep') {
+    response = prompt("BE SPECIFIC!");
 }
-if (response === 'eating') {
-    item = '<img src="/images/lemongrass.JPG">';
-} else if (response === 'playing') { 
+if (response === 'eat') {
+    item = '<img src="/images/lemoneat.JPG">';
+} else if (response === 'play') { 
     item = '<img src="/images/lemonhead.JPG">';
-} else if (response === 'sleeping') {
-    item = '<img src="images/lemonsleeping1.JPG">';
+} else if (response === 'sleep') {
+    item = '<img src="/images/lemonsleeping1.JPG">';
 }
 return item; 
 }
-getProduct(); 
+// getProduct(); 
 
     
     
@@ -58,7 +58,7 @@ function getCount() {
 }
 return count; 
 }
-getCount(); 
+// getCount(); 
     
   
 //where helper functions are called
